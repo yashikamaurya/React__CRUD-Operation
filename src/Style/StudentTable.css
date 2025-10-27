@@ -1,0 +1,82 @@
+.b1 {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: brown;
+  margin-bottom: 20px;
+}
+.b1:hover {
+  background-color: brown;
+  color: white;
+}
+h1 {
+  color: brown;
+}
+.stud-container {
+  background-color: burlywood;
+
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(102, 19, 19);
+}
+
+.stud-table {
+  width: 100%;
+}
+tr {
+  padding: 3px;
+}
+
+thead {
+  background-color: brown;
+  border-radius: 10px;
+}
+th {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+td {
+  border: 2px solid brown;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 10px;
+}
+td:hover {
+  background-color: lightgray;
+}
+.view-btn,
+.edit-btn,
+.delete-btn {
+  width: 100px;
+  height: 40px;
+  gap: 10px;
+  margin: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: brown;
+}
+.view-btn:hover {
+  background-color: brown;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: brown;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: brown;
+  color: white;
+}

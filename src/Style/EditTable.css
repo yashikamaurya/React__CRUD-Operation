@@ -1,0 +1,45 @@
+.edit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 600px;
+  align-items: center; /*left alignment fix */
+  padding: 10px;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgb(102, 19, 19);
+
+  margin-top: 20px;
+  background-color: burlywood;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%; /* reduced width for better spacing */
+}
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  align-self: flex-start; /* left alignment fix */
+  color: brown;
+}
+input {
+  margin: 10px 0; /* top-bottom spacing only */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%; /*full width inside the container */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.b1 :hover {
+  background-color: darkred;
+}
