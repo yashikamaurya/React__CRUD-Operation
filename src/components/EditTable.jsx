@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import "../Style/EditTable.css";
+
+const BASE_URL = "https://student-api-mdjv.onrender.com";
 const EditTable = () => {
   const { id } = useParams();
   const [studentid, setStudentid] = useState("");
@@ -14,7 +16,7 @@ const EditTable = () => {
   const navigate = useNavigate();
   // const [studentdata, setStudentData] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:7000/students/${id}`)
+    fetch(`${BASE_URL}/students/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setStudentid(data.studentid);
@@ -28,7 +30,7 @@ const EditTable = () => {
   const formHandler = (e) => {
     e.preventDefault();
     const studentData = { id, name, age, city, number };
-    fetch(`http://localhost:7000/students/${id}`, {
+    fetch(`${BASE_URL}/students/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

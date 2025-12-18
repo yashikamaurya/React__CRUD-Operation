@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../Style/StudentTable.css";
 
+// base url
+const BASE_URL = "https://student-api-mdjv.onrender.com";
 const StudentTable = () => {
   const navigate = useNavigate();
   const ViewDetails = (id) => {
@@ -14,7 +16,7 @@ const StudentTable = () => {
   };
   const RemoveDetails = (id) => {
     if (window.confirm("Are you sure to delete this record?")) {
-      fetch(`http://localhost:7000/students/${id}`, {
+      fetch(`${BASE_URL}/students/${id}`, {
         method: "DELETE",
       })
         .then(() => {
@@ -27,7 +29,7 @@ const StudentTable = () => {
   const [students, setStudents] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:7000/students")
+    fetch(`${BASE_URL}/students`)
       .then((res) => res.json())
       .then((data) => setStudents(data))
       .catch((err) => console.log(err));

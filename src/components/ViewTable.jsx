@@ -2,11 +2,13 @@ import React from "react";
 import "../Style/ViewTable.css";
 import { useEffect, useState } from "react";
 import { useParams, Link, data } from "react-router-dom";
+
+const BASE_URL = "https://student-api-mdjv.onrender.com";
 const ViewTable = () => {
   const { id } = useParams();
   const [studentdata, setStudentData] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:7000/students/${id}`)
+    fetch(`${BASE_URL}/students/${id}`)
       .then((res) => res.json())
       .then((data) => setStudentData(data))
       .catch((err) => console.log(err));

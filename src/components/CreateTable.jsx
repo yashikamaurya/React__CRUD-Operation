@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../Style/CreateTable.css";
 import { Link, useNavigate } from "react-router-dom";
 
+const BASE_URL = "https://student-api-mdjv.onrender.com";
 const CreateTable = () => {
   const [id, setid] = useState("");
   const [name, setname] = useState("");
@@ -14,7 +15,7 @@ const CreateTable = () => {
   const formHandler = (e) => {
     e.preventDefault();
     const studentData = { id, name, age, city, number };
-    fetch("http://localhost:7000/students", {
+    fetch(`${BASE_URL}/students`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
