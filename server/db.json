@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Yashika Maurya",
+      "age": "24",
+      "city": "noida",
+      "number": "2343354"
+    },
+    {
+      "id": "2",
+      "name": "siya",
+      "age": "20",
+      "city": "mumbai",
+      "number": "4545657"
+    },
+    {
+      "id": "4",
+      "name": "nagesh pandit",
+      "age": "8",
+      "city": "delhi",
+      "number": "567678"
+    }
+  ]
+}
